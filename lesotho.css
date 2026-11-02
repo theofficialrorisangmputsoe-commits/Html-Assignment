@@ -71,6 +71,11 @@ nav li:hover{
     justify-content: flex-end;
     align-items: flex-end;
 }
+.Immages{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
 body{
     background-color: #add8e6;
 }

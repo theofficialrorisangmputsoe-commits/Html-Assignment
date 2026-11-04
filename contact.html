@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Kingdom In The Sky - Contact</title>
@@ -7,74 +8,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="home">
-    <h1 class="topbar">Contact & Booking</h1>
     <nav>
+        <h1 class="topbar">Contact & Booking</h1>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="Home.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="services_products.html">Services/Products</a></li>
             <li><a href="gallery2.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="container my-5">
+    <div class="container my-5" style="margin-top: 120px !important;">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card p-4 shadow-sm" style="background-color: #c8e9f5; border: 2px solid #add8e6;">
-                    <h2 class="mb-4 text-center">Get in Touch / Book a Tour</h2>
-                    <div id="formAlert" class="alert d-none" role="alert"></div>
+                <div class="card p-4 shadow-sm" style="background-color: #ffffff; border: 2px solid #141438;">
+                    <h2 class="mb-3 text-center" style="color: #141438;">Get in Touch / Book a Tour</h2>
+                    <p class="text-center text-muted mb-4">Fill out the form below to book your adventure.</p>
 
-                    <form id="contactForm" novalidate>
+                    <form id="contactForm">
                         <div class="mb-3">
-                            <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" required>
-                            <div class="invalid-feedback">Please enter your full name.</div>
+                            <label for="fullName" class="form-label fw-bold">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required pattern="[A-Za-z\s]+" maxlength="20">
                         </div>
 
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" required>
-                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                            <label for="email" class="form-label fw-bold">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                         </div>
 
                         <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" required>
-                            <div class="invalid-feedback">Please enter your phone number.</div>
+                            <label for="phone" class="form-label fw-bold">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="+266 ..." required pattern="[0-9+\s-]{6,}" maxlength="8">
                         </div>
 
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password (for account creation)</label>
-                            <input type="password" class="form-control" id="password" required>
-                            <div class="invalid-feedback">Password must be at least 6 characters long.</div>
+                            <label for="password" class="form-label fw-bold">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="At least 6 characters" required minlength="6">
                         </div>
 
                         <div class="mb-3">
-                            <label for="gender" class="form-label">Gender</label>
+                            <label for="gender" class="form-label fw-bold">Gender</label>
                             <select class="form-select" id="gender" required>
                                 <option value="" selected disabled>Choose...</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
-                            <div class="invalid-feedback">Please select a gender option.</div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="message" class="form-label">Inquiry / Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                            <div class="invalid-feedback">Please write a message.</div>
+                            <label for="message" class="form-label fw-bold">Inquiry / Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Tell us about the trip you'd like to book..." required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-dark w-100">Submit Registration</button>
+                        <button type="submit" class="btn w-100 fw-bold" style="background-color: #141438; color: #ffd700;">Submit Registration</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <footer>
+        <div class="image-references">
+            <p>&copy; 2026 Kingdom In The Sky. All rights reserved.</p>
+            <h4>Image Credits & References</h4>
+            <ul>
+                <li>Winter mountain resort landscape: Photo via <a href="https://afriski.africa/planning-your-stay-at-afriski-mountain-resort-essential-tips-and-information/" target="_blank" rel="noopener noreferrer">Resort Archive</a></li>
+                <li>Golden hour mountain range reflection: Photo via <a href="https://worldlist.vision/africa/lesotho/sehlabathebe-national-park.phtml" target="_blank" rel="noopener noreferrer">Scenic Lesotho[cite: 2]</a></li>
+                <li>Traditional local pot-baked bread: Photo via <a href="https://www.africaimagelibrary.com" target="_blank" rel="noopener noreferrer">Africa Image Library[cite: 3]</a></li>
+                <li>Highland reservoir view with hiker: Photo via <a href="https://www.africaimagelibrary.com/media/c269a2a0-2558-4520-9fe6-e01890d6b514-traditional-bread-basotho-village-sani-top-lesotho" target="_blank" rel="noopener noreferrer">Travel Lesotho[cite: 4]</a></li>
+                <li>Dam wall and spillway aerial landscape: Photo via <a href="https://tkaynthebe.com/ha-lejone-travel-guide-lesothos-scenic-mountain-escape/" target="_blank" rel="noopener noreferrer">Highlands Water Project[cite: 5]</a></li>
+                <li>Historic rock shelter cave dwellings: Photo via <a href="https://en.wikipedia.org/wiki/Katse_Dam" target="_blank" rel="noopener noreferrer">Cultural Heritage Archive[cite: 6]</a></li>
+                <li>Traditional local grain porridge dish: Photo via <a href="https://en.wikipedia.org/wiki/Kome_Caves" target="_blank" rel="noopener noreferrer">Culinary Heritage[cite: 8]</a></li>
+                <li>Traditional regional stew preparation: Photo via <a href="https://www.instagram.com/p/Ct3b0batiHj/" target="_blank" rel="noopener noreferrer">Local Kitchen[cite: 9]</a></li>
+                <li>Valley lodge and thatched rondavel hut: Photo via <a href="https://en.wikipedia.org/wiki/Mala_mogodu" target="_blank" rel="noopener noreferrer">Malealea Tourism[cite: 10]</a></li>
+                <li>Scenic panoramic mountain terrain: Photo via <a href="https://acacia-africa.com/highlights/malealea-activities-145" target="_blank" rel="noopener noreferrer">Tourism Board[cite: 1]</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
